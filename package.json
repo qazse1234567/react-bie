@@ -1,0 +1,28 @@
+{
+    "name": "react-bie",
+    "version": "0.0.1",
+    "main": "lib/index.js",
+    "license": "MIT",
+    "author": "ZJ <554092921@qq.com>",
+    "scripts": {
+        "build": "webpack --progress",
+        "watch": "webpack --watch --progress"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.3",
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.5",
+        "clean-webpack-plugin": "^2.0.1",
+        "css-loader": "^2.1.1",
+        "less": "^3.9.0",
+        "less-loader": "^4.1.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.3.0"
+    },
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    }
+}
