@@ -1,0 +1,59 @@
+/*
+ * Project: 昭通(昭阳)官网改版
+ * Created Date: Thursday February 28th 2019
+ * Author: ZJ(zhengjiang151@qq.com)
+ * -----
+ * Last Modified: Thursday February 28th 2019 3:59:29 pm
+ * Modified By: the developer formerly known as zhengjiang at <you@you.you>
+ * -----
+ * Description: 
+ */
+@color1: #173157;
+.pagination {
+    // display: flex;
+    // align-items: center;
+    .common_page {
+        display: inline-block;
+        height: 20px;
+        border: 1px solid @color1;
+        text-align: center;
+        line-height: 22px;
+        font-size: 12px;
+        border-radius: 2px;
+        color: @color1;
+        transition: all 300ms;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    .common_hover{
+        color: #fff;
+        background: @color1;
+    }
+    .page_item {
+        width: 20px;
+        .common_page;
+        &:hover {
+            color: #fff;
+            background: @color1;
+        }
+    }
+
+    .currentPage {
+        .common_hover;
+    }
+    .prev,
+    .next {
+        width: 40px;
+        .common_page;
+        &:hover {
+            .common_hover;
+        }
+    }
+    .dis_page {
+        .common_page;
+        width: 40px;
+        border-color: #999;
+        color: #999;
+        cursor: not-allowed;
+    }
+}
